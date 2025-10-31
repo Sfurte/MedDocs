@@ -4,7 +4,7 @@ import os
 import logging
 from typing import Optional
 
-from recs_parser import generate_all_paragraphs
+from app.recs_parser import generate_all_paragraphs
 
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
