@@ -1,4 +1,4 @@
-from recs_loader import recs_html_generator
+from app.recs_loader import recs_html_generator
 from bs4 import BeautifulSoup, Tag
 from collections import namedtuple
 
