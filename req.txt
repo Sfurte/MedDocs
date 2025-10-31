@@ -1,0 +1,5 @@
+fastapi[all]
+requests
+bs4
+openpyxl
+playwright
