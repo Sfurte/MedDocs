@@ -8,8 +8,8 @@ class Paragraph(Base):
     id: Mapped[int_pk]
     rec_title: Mapped[str]
     chapter_id: Mapped[str]
-    chapter_title: Mapped[str]
-    chapter_content: Mapped[str]
+    title: Mapped[str]
+    content: Mapped[str]
 
     def __str__(self):
         return (f"{self.__class__.__name__}(id={self.id}, "
@@ -18,3 +18,12 @@ class Paragraph(Base):
 
     def __repr__(self):
         return str(self)
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'rec_title': self.rec_title,
+            'chapter_id': self.chapter_id,
+            'title': self.title,
+            'content': self.content
+        }
